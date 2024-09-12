@@ -7,7 +7,7 @@ import { FaUser } from "react-icons/fa";
 
 export function HeaderTop() {
   return (
-    <header className="bg-slate-500 px-4 py-2">
+    <header className="bg-slate-500 p-4 lg:py-2">
       <div
         className="
       container m-auto 
@@ -36,8 +36,12 @@ export function HeaderTop() {
           <Link href="produtos/">Contatos</Link>
         </nav>
         <div className="hidden lg:flex gap-4">
-          <FaUser size={20} />
-          <FaCartPlus size={20} />
+          <Link href="#" className="cursor-pointer">
+            <FaUser size={20} />
+          </Link>
+          <Link href="#" className="cursor-pointer">
+            <FaCartPlus size={20} />
+          </Link>
         </div>
       </div>
     </header>
