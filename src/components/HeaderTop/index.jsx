@@ -7,7 +7,7 @@ import { FaUser } from "react-icons/fa";
 
 export function HeaderTop() {
   return (
-    <header className="bg-slate-500 p-4 lg:py-2">
+    <header className="bg-branco2 p-4 lg:py-2">
       <div
         className="
       container m-auto 
@@ -27,8 +27,9 @@ export function HeaderTop() {
         </div>
         <nav
           className="
+          text-verde2 font-semibold
           flex gap-8 justify-center
-          md:text-lg md:font-semibold
+          md:text-lg md:font-bold
           "
         >
           <Link href="produtos/">Produtos</Link>
