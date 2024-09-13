@@ -34,6 +34,17 @@ export default function Home() {
               , proporcionamos um ambiente seguro e tranquilo para que seu amigo
               se sinta confortável durante todo o processo.
             </p>
+            <p>
+              Sabemos que a alimentação é fundamental para a saúde do seu pet,
+              por isso oferecemos uma{" "}
+              <strong className="text-verde2">
+                ampla variedade de rações de alta qualidade
+              </strong>{" "}
+              e alimentos balanceados, adaptados às necessidades individuais de
+              cada animal. Nossos especialistas estão disponíveis para fornecer
+              orientação personalizada e ajudálo a escolher a melhor opção para
+              o seu amiguinho.
+            </p>
           </div>
         </section>
       </main>
