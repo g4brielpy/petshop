@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { BannerHome } from "@/components/BannerHome";
-import { Title2 } from "@/components/Titles";
+import { Title } from "@/components/UI/Titles";
 
 export default function Home() {
   return (
@@ -8,10 +8,10 @@ export default function Home() {
       <BannerHome />
       <main className="container mx-auto p-4">
         <section>
-          <Title2>
+          <Title>
             Bem-vindo ao Petshop{" "}
             <span className="text-verde2">Melhor Amigo!</span>
-          </Title2>
+          </Title>
 
           <div className="space-y-4 text-justify md:text-lg lg:text-xl">
             <p>
@@ -50,9 +50,9 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <Title2>
+          <Title>
             Venha Conhecer Nossos <span className="text-verde2">Produtos</span>
-          </Title2>
+          </Title>
         </section>
       </main>
     </>
