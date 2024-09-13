@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { BannerHome } from "@/components/BannerHome";
+
 import { Title } from "@/components/UI/Titles";
+import { Paragraph } from "@/components/UI/Paragraph";
 
 export default function Home() {
   return (
@@ -14,15 +16,15 @@ export default function Home() {
           </Title>
 
           <div className="space-y-4 text-justify md:text-lg lg:text-xl">
-            <p>
+            <Paragraph>
               No Petshop "Melhor Amigo", nós entendemos que seu animal de
               estimação é mais do que apenas um bichinho, é um membro especial
               da sua <strong className="text-verde2">família</strong>. Com isso
               em mente, estamos comprometidos em fornecer cuidados excepcionais
               e serviços de alta qualidade para garantir que seu melhor amigo
               tenha uma vida feliz e saudável.
-            </p>
-            <p>
+            </Paragraph>
+            <Paragraph>
               Com uma equipe dedicada e apaixonada por animais, nossos
               profissionais treinados estão prontos para oferecer os melhores
               cuidados para o seu pet. Desde{" "}
@@ -35,8 +37,8 @@ export default function Home() {
               </strong>
               , proporcionamos um ambiente seguro e tranquilo para que seu amigo
               se sinta confortável durante todo o processo.
-            </p>
-            <p>
+            </Paragraph>
+            <Paragraph>
               Sabemos que a alimentação é fundamental para a saúde do seu pet,
               por isso oferecemos uma{" "}
               <strong className="text-verde2">
@@ -46,7 +48,7 @@ export default function Home() {
               cada animal. Nossos especialistas estão disponíveis para fornecer
               orientação personalizada e ajudálo a escolher a melhor opção para
               o seu amiguinho.
-            </p>
+            </Paragraph>
           </div>
         </section>
         <section>
