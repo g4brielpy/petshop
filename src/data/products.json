@@ -1,0 +1,62 @@
+{
+  "limpeza": [
+    {
+      "title": "Shampoo Antipulgas",
+      "description": "Shampoo para limpeza profunda e combate a pulgas.",
+      "price": "29,90",
+      "category": "Limpeza"
+    },
+    {
+      "title": "Sabonete Neutro Canino",
+      "description": "Sabonete suave para peles sensíveis, ideal para cachorros e gatos.",
+      "price": "19,90",
+      "category": "Limpeza"
+    },
+    {
+      "title": "Condicionador Pelos Sedosos",
+      "description": "Condicionador para manter o pelo do seu pet macio e brilhoso.",
+      "price": "24,90",
+      "category": "Limpeza"
+    }
+  ],
+  "tosa": [
+    {
+      "title": "Máquina de Tosa Profissional",
+      "description": "Máquina silenciosa e precisa, ideal para tosa em casa.",
+      "price": "199,90",
+      "category": "Tosa"
+    },
+    {
+      "title": "Tesoura de Tosa Curvada",
+      "description": "Tesoura com lâmina de alta precisão, ideal para cortes detalhados.",
+      "price": "49,90",
+      "category": "Tosa"
+    },
+    {
+      "title": "Kit Completo de Tosa",
+      "description": "Inclui máquina, tesoura, pentes e escova de limpeza.",
+      "price": "299,90",
+      "category": "Tosa"
+    }
+  ],
+  "racao": [
+    {
+      "title": "Ração Premium Cães Adultos",
+      "description": "Ração premium para cães adultos, sabor frango e carne.",
+      "price": "149,90",
+      "category": "Ração"
+    },
+    {
+      "title": "Ração Super Premium Filhotes",
+      "description": "Ração balanceada com nutrientes essenciais para o crescimento.",
+      "price": "129,90",
+      "category": "Ração"
+    },
+    {
+      "title": "Ração Light Cães Idosos",
+      "description": "Ração com baixo teor de gordura, ideal para cães mais velhos.",
+      "price": "139,90",
+      "category": "Ração"
+    }
+  ]
+}
