@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BannerHome } from "@/components/BannerHome";
+import { Title2 } from "@/components/Titles";
 
 export default function Home() {
   return (
@@ -7,10 +8,11 @@ export default function Home() {
       <BannerHome />
       <main className="container mx-auto p-4">
         <section>
-          <h2 className="font-sans font-bold mb-6 text-center text-2xl md:text-3xl lg:text-4xl">
+          <Title2>
             Bem-vindo ao Petshop{" "}
             <span className="text-verde2">Melhor Amigo!</span>
-          </h2>
+          </Title2>
+
           <div className="space-y-4 text-justify md:text-lg lg:text-xl">
             <p>
               No Petshop "Melhor Amigo", nós entendemos que seu animal de
@@ -46,6 +48,11 @@ export default function Home() {
               o seu amiguinho.
             </p>
           </div>
+        </section>
+        <section>
+          <Title2>
+            Venha Conhecer Nossos <span className="text-verde2">Produtos</span>
+          </Title2>
         </section>
       </main>
     </>
