@@ -1,7 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 
+import { Logo } from "../UI/Logo";
 import { FaCartPlus } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 
@@ -15,16 +15,7 @@ export function HeaderTop() {
       lg:flex-row lg:justify-evenly
       "
       >
-        <div className="flex flex-col items-center">
-          <Image
-            src="/cachorro-icon.png"
-            alt="Cachorro Icon"
-            width="100"
-            height="100"
-            className="object-cover w-16"
-          />
-          <p className="text-2xl font-bold font-sans">Melhor Amigo</p>
-        </div>
+        <Logo />
         <nav
           className="
           text-verde2 font-semibold
