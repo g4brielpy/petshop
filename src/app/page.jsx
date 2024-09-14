@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { BannerHome } from "@/components/BannerHome";
 
-import { Title } from "@/components/UI/Titles";
+import {
+  TitlesBanner,
+  SubTitlesBanner,
+  TitleSection,
+} from "@/components/UI/Titles";
 import { Paragraph } from "@/components/UI/Paragraph";
 import { SpaceSection } from "@/components/UI/SpaceSection";
 
@@ -11,11 +15,11 @@ export default function Home() {
       <BannerHome>
         <div className="container mx-auto mb-10 font-bold flex flex-col text-white">
           <p>Bem Vindo ao PetShop</p>
-          <div className="my-8 space-y-4 font-bold font-sans">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl ">Melhor Amigo</h1>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl">
+          <div className="my-8 space-y-4 ">
+            <TitlesBanner>Melhor Amigo</TitlesBanner>
+            <SubTitlesBanner>
               Nós fornecemos os melhores <br /> produtos para animais
-            </h2>
+            </SubTitlesBanner>
           </div>
           <p>Economize 20% no seu primeiro pedido</p>
         </div>
@@ -36,12 +40,12 @@ export default function Home() {
 
       <main className="container mx-auto p-4">
         <SpaceSection />
-        
+
         <section>
-          <Title>
+          <TitleSection>
             Bem-vindo ao Petshop{" "}
             <span className="text-verde2">Melhor Amigo!</span>
-          </Title>
+          </TitleSection>
           <div className="space-y-4">
             <Paragraph>
               No Petshop "Melhor Amigo", nós entendemos que seu animal de
@@ -82,9 +86,9 @@ export default function Home() {
         <SpaceSection />
 
         <section>
-          <Title>
+          <TitleSection>
             Venha Conhecer Nossos <span className="text-verde2">Produtos</span>
-          </Title>
+          </TitleSection>
         </section>
       </main>
     </>
