@@ -3,19 +3,46 @@ import { BannerHome } from "@/components/BannerHome";
 
 import { Title } from "@/components/UI/Titles";
 import { Paragraph } from "@/components/UI/Paragraph";
+import { SpaceSection } from "@/components/UI/SpaceSection";
 
 export default function Home() {
   return (
     <>
-      <BannerHome />
+      <BannerHome>
+        <div className="container mx-auto mb-10 font-bold flex flex-col text-white">
+          <p>Bem Vindo ao PetShop</p>
+          <div className="my-8 space-y-4 font-bold font-sans">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl ">Melhor Amigo</h1>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl">
+              Nós fornecemos os melhores <br /> produtos para animais
+            </h2>
+          </div>
+          <p>Economize 20% no seu primeiro pedido</p>
+        </div>
+        <div className="container mx-auto">
+          <Link
+            href="/produtos"
+            className=" 
+                text-white bg-verde1 
+                px-4 py-2 md:px-5 md:py-3 
+                rounded-md shadow-md
+                hover:opacity-85 hover:underline
+              "
+          >
+            Ver Produtos
+          </Link>
+        </div>
+      </BannerHome>
+
       <main className="container mx-auto p-4">
+        <SpaceSection />
+        
         <section>
           <Title>
             Bem-vindo ao Petshop{" "}
             <span className="text-verde2">Melhor Amigo!</span>
           </Title>
-
-          <div className="space-y-4 text-justify md:text-lg lg:text-xl">
+          <div className="space-y-4">
             <Paragraph>
               No Petshop "Melhor Amigo", nós entendemos que seu animal de
               estimação é mais do que apenas um bichinho, é um membro especial
@@ -51,6 +78,9 @@ export default function Home() {
             </Paragraph>
           </div>
         </section>
+
+        <SpaceSection />
+
         <section>
           <Title>
             Venha Conhecer Nossos <span className="text-verde2">Produtos</span>
