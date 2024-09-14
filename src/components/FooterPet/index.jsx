@@ -9,7 +9,9 @@ import { ContactCard } from "../UI/ContactCard";
 export function FooterPet() {
   return (
     <footer className="bg-verde4 pt-4">
-      <Logo />
+      <Link href="/">
+        <Logo />
+      </Link>
       <div className="container mx-auto my-10 px-4 ">
         <div className="flex flex-wrap flex-col sm:flex-row items-center gap-4 ">
           <div className="w-20 h-20 hidden md:flex">

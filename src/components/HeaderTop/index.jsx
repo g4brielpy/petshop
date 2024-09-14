@@ -15,7 +15,9 @@ export function HeaderTop() {
       lg:flex-row lg:justify-evenly
       "
       >
-        <Logo />
+        <Link href="/">
+          <Logo />
+        </Link>
         <nav
           className="
           text-verde2 font-semibold
