@@ -7,3 +7,11 @@ export function Title({ children }) {
     </h2>
   );
 }
+
+export function TitleFooter4({ children }) {
+  return (
+    <h4 className="font-semibold md:font-bold font-sans text-lg md:text-xl lg:text-2xl">
+      {children}
+    </h4>
+  );
+}
