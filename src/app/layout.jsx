@@ -2,6 +2,7 @@ import { inter } from "@/lib/fonts";
 import "@/styles/globals.css";
 
 import { HeaderTop } from "@/components/HeaderTop";
+import { FooterPet } from "@/components/FooterPet";
 
 export const metadata = {
   title: "PetShop - Melhor Amigo",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body className={inter.variable}>
         <HeaderTop />
         {children}
+        <FooterPet />
       </body>
     </html>
   );
