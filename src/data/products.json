@@ -7,15 +7,15 @@
       "category": "Limpeza"
     },
     {
-      "title": "Sabonete Neutro Canino",
-      "description": "Sabonete suave para peles sensíveis, ideal para cachorros e gatos.",
-      "price": "19,90",
+      "title": "Banho Relaxante",
+      "description": "Banho com produtos de qualidade para pelagem macia e cheirosa.",
+      "price": "49,90",
       "category": "Limpeza"
     },
     {
-      "title": "Condicionador Pelos Sedosos",
-      "description": "Condicionador para manter o pelo do seu pet macio e brilhoso.",
-      "price": "24,90",
+      "title": "Produtos de Higiene",
+      "description": "Shampoos, escovas e produtos para o cuidado completo do seu pet.",
+      "price": "39,90",
       "category": "Limpeza"
     }
   ],
@@ -27,9 +27,9 @@
       "category": "Tosa"
     },
     {
-      "title": "Tesoura de Tosa Curvada",
-      "description": "Tesoura com lâmina de alta precisão, ideal para cortes detalhados.",
-      "price": "49,90",
+      "title": "Serviço de Tosa Especializada",
+      "description": "Tosa profissional para cães com higienização e cuidados especiais.",
+      "price": "89,90",
       "category": "Tosa"
     },
     {
@@ -53,10 +53,30 @@
       "category": "Ração"
     },
     {
-      "title": "Ração Light Cães Idosos",
-      "description": "Ração com baixo teor de gordura, ideal para cães mais velhos.",
+      "title": "Ração Premium",
+      "description": "Rações premium para cães e gatos, com nutrição balanceada.",
       "price": "139,90",
       "category": "Ração"
+    }
+  ],
+  "brinquedos": [
+    {
+      "title": "Brinquedo de Mastigação",
+      "description": "Brinquedo durável para mastigação, ideal para cães ativos.",
+      "price": "49,90",
+      "category": "Brinquedos"
+    },
+    {
+      "title": "Brinquedo Interativo",
+      "description": "Brinquedo que estimula o exercício físico e mental do seu pet.",
+      "price": "69,90",
+      "category": "Brinquedos"
+    },
+    {
+      "title": "Jogo Interativo para Gatos",
+      "description": "Diversão e estímulo mental para gatos de todas as idades.",
+      "price": "59,90",
+      "category": "Brinquedos"
     }
   ]
 }
