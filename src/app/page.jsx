@@ -1,10 +1,13 @@
 import Link from "next/link";
+import products from "@/data/products.json";
 import { BannerHome } from "@/components/BannerHome";
 
 import {
   TitlesBanner,
   SubTitlesBanner,
   TitleSection,
+  TitleCategory,
+  TitleCard,
 } from "@/components/UI/Titles";
 import { Paragraph } from "@/components/UI/Paragraph";
 import { SpaceSection } from "@/components/UI/SpaceSection";
@@ -89,7 +92,42 @@ export default function Home() {
           <TitleSection>
             Venha Conhecer Nossos <span className="text-verde2">Produtos</span>
           </TitleSection>
+          <div className="grid md:grid-cols-2 gap-6">
+            {Object.entries(products).map(([category, items]) => (
+              <div key={category}>
+                <TitleCategory>
+                  {category[0].toUpperCase() + category.slice(1)}
+                </TitleCategory>
+                <div className="">
+                  {
+                    <div className="bg-white px-4 py-6 rounded-lg shadow-lg border">
+                      <TitleCard>{items[0].title}</TitleCard>
+                      <p className="mb-2">{items[0].description}</p>
+                      <p className="font-bold text-verde2">
+                        R$ {items[0].price}
+                      </p>
+                    </div>
+                  }
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12">
+            <Link
+              href="/produtos"
+              className="
+                  text-white bg-verde1
+                  px-4 py-2 md:px-5 md:py-3
+                  rounded-md shadow-md
+                  hover:opacity-85 hover:underline
+                "
+            >
+              Ver Mais Produtos
+            </Link>
+          </div>
         </section>
+
+        <SpaceSection />
       </main>
     </>
   );
