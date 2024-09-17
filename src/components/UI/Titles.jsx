@@ -31,3 +31,15 @@ export function TitleFooter4({ children }) {
     </h4>
   );
 }
+
+export function TitleCategory({ children }) {
+  return (
+    <h3 className="text-xl md:text-2xl 2xl:text-3xl font-bold mb-4 text-verde2">
+      {children}
+    </h3>
+  );
+}
+
+export function TitleCard({ children }) {
+  return <h4 className="text-lg md:text-xl font-semibold mb-2">{children}</h4>;
+}
