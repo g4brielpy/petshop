@@ -103,9 +103,21 @@ export default function Home() {
                     <div className="bg-white px-4 py-6 rounded-lg shadow-lg border">
                       <TitleCard>{items[0].title}</TitleCard>
                       <p className="mb-2">{items[0].description}</p>
-                      <p className="font-bold text-verde2">
-                        R$ {items[0].price}
-                      </p>
+                      <div className="flex justify-between items-center flex-wrap gap-4 mt-6">
+                        <p className="font-bold text-verde2">
+                          R$ {items[0].price}
+                        </p>
+                        <Link
+                          href="/produtos"
+                          className="
+                            font-bold bg-verde2 text-white 
+                            px-4 py-2 rounded-lg
+                            hover:opacity-85 hover:underline  
+                          "
+                        >
+                          Comprar
+                        </Link>
+                      </div>
                     </div>
                   }
                 </div>

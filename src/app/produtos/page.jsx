@@ -73,7 +73,19 @@ export default function produtos() {
                     >
                       <TitleCard>{item.title}</TitleCard>
                       <p className="mb-2">{item.description}</p>
-                      <p className="font-bold text-verde2">R$ {item.price}</p>
+                      <div className="flex justify-between items-center flex-wrap gap-4 mt-6">
+                        <p className="font-bold text-verde2">R$ {item.price}</p>
+                        <Link
+                          href="#"
+                          className="
+                            font-bold bg-verde2 text-white 
+                            px-4 py-2 rounded-lg
+                            hover:opacity-85 hover:underline  
+                          "
+                        >
+                          Comprar
+                        </Link>
+                      </div>
                     </div>
                   ))}
                 </div>
