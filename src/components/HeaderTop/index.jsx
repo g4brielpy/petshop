@@ -27,7 +27,7 @@ export function HeaderTop() {
         >
           <Link href="produtos/">Produtos</Link>
           <Link href="galeria/">Galeria</Link>
-          <Link href="produtos/">Contatos</Link>
+          <Link href="contatos/">Contatos</Link>
         </nav>
         <div className="hidden lg:flex gap-4">
           <Link href="#" className="cursor-pointer">
