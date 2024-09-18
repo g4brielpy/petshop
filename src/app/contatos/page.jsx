@@ -20,7 +20,8 @@ export default function contatos() {
           <div className="my-8 space-y-4 ">
             <TitlesBanner>Melhor Amigo</TitlesBanner>
             <SubTitlesBanner>
-              Os melhores produtos para <br /> Seu animalzinho de estimação
+              Entre em contato conosco para <br /> agendar um serviço hoje
+              mesmo!
             </SubTitlesBanner>
           </div>
           <p>Economize 20% no seu primeiro pedido</p>
