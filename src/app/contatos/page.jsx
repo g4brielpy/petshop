@@ -6,11 +6,12 @@ import {
   TitlesBanner,
   SubTitlesBanner,
   TitleSection,
-  TitleCategory,
-  TitleCard,
 } from "@/components/UI/Titles";
 import { SpaceSection } from "@/components/UI/SpaceSection";
-import { InputContact } from "@/components/UI/Inputs";
+import {
+  InputContact,
+  TextareaContact,
+} from "@/components/UI/FormContatc/Inputs";
 import { Paragraph } from "@/components/UI/Paragraph";
 
 export default function contatos() {
@@ -64,7 +65,12 @@ export default function contatos() {
           className="mx-auto"
         />
         <div className="mt-6 mx-auto lg:max-w-[1024px]">
-          <form action="#" method="post" className="flex flex-col gap-6">
+          <form
+            action="#"
+            method="post"
+            className="flex flex-col gap-6"
+            onSubmit={(event) => event.preventDefault()}
+          >
             <div className="flex flex-col gap-2">
               <label htmlFor="name">Nome</label>
               <InputContact
@@ -94,15 +100,7 @@ export default function contatos() {
             </div>
             <div className="flex flex-col gap-2">
               <label htmlFor="mensagem">Mensagem</label>
-              <textarea
-                name="mensagem"
-                id="mensagem"
-                className="
-                outline-none border border-solid 
-               border-verde1 focus:border-verde2 
-                p-4 rounded-md
-              "
-              ></textarea>
+              <TextareaContact name="mensagem" id="mensagem"></TextareaContact>
             </div>
             <div>
               <button

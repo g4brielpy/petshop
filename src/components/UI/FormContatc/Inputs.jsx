@@ -20,3 +20,19 @@ export function InputContact({
     />
   );
 }
+
+export function TextareaContact({ name = "", id = "", children }) {
+  return (
+    <textarea
+      name={name}
+      id={id}
+      className="
+        outline-none border border-solid 
+        border-verde1 focus:border-verde2 
+        p-4 rounded-md
+      "
+    >
+      {children}
+    </textarea>
+  );
+}
