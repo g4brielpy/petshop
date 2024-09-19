@@ -62,8 +62,8 @@ export default function contatos() {
           height="80"
           className="mx-auto"
         />
-        <div>
-          <form action="#" method="post">
+        <div className="mt-16">
+          <form action="#" method="post" className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">
               <label htmlFor="name">Nome</label>
               <input
@@ -71,6 +71,7 @@ export default function contatos() {
                 name="name"
                 id="name"
                 placeholder="Ex.: Gabriel Iuri"
+                className="outline-none border border-solid border-verde1 focus:border-verde2 p-4 rounded-md"
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -80,6 +81,7 @@ export default function contatos() {
                 name="email"
                 id="email"
                 placeholder="Ex.: contato@gmail.com"
+                className="outline-none border border-solid border-verde1 focus:border-verde2 p-4 rounded-md"
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -89,6 +91,7 @@ export default function contatos() {
                 name="tel"
                 id="tel"
                 placeholder="Ex.: 31 9 9999-9999"
+                className="outline-none border border-solid border-verde1 focus:border-verde2 p-4 rounded-md"
               />
             </div>
             <div className="flex flex-col gap-2">
