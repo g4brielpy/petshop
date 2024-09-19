@@ -10,6 +10,7 @@ import {
   TitleCard,
 } from "@/components/UI/Titles";
 import { SpaceSection } from "@/components/UI/SpaceSection";
+import { InputContact } from "@/components/UI/Inputs";
 import { Paragraph } from "@/components/UI/Paragraph";
 
 export default function contatos() {
@@ -62,44 +63,51 @@ export default function contatos() {
           height="80"
           className="mx-auto"
         />
-        <div className="mt-16">
+        <div className="mt-6 mx-auto lg:max-w-[1024px]">
           <form action="#" method="post" className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">
               <label htmlFor="name">Nome</label>
-              <input
+              <InputContact
                 type="text"
                 name="name"
                 id="name"
                 placeholder="Ex.: Gabriel Iuri"
-                className="outline-none border border-solid border-verde1 focus:border-verde2 p-4 rounded-md"
               />
             </div>
             <div className="flex flex-col gap-2">
               <label htmlFor="email">Email</label>
-              <input
+              <InputContact
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Ex.: contato@gmail.com"
-                className="outline-none border border-solid border-verde1 focus:border-verde2 p-4 rounded-md"
               />
             </div>
             <div className="flex flex-col gap-2">
               <label htmlFor="tel">Telefone</label>
-              <input
+              <InputContact
                 type="tel"
                 name="tel"
                 id="tel"
                 placeholder="Ex.: 31 9 9999-9999"
-                className="outline-none border border-solid border-verde1 focus:border-verde2 p-4 rounded-md"
               />
             </div>
             <div className="flex flex-col gap-2">
               <label htmlFor="mensagem">Mensagem</label>
-              <textarea name="mensagem" id="mensagem"></textarea>
+              <textarea
+                name="mensagem"
+                id="mensagem"
+                className="
+                outline-none border border-solid 
+               border-verde1 focus:border-verde2 
+                p-4 rounded-md
+              "
+              ></textarea>
             </div>
           </form>
         </div>
+
+        <SpaceSection />
       </main>
     </>
   );
