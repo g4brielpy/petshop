@@ -11,6 +11,7 @@ import {
 } from "@/components/UI/Titles";
 import { Paragraph } from "@/components/UI/Paragraph";
 import { SpaceSection } from "@/components/UI/SpaceSection";
+import { ButtonDefault } from "@/components/UI/ButtonDefault";
 
 export default function Home() {
   return (
@@ -27,17 +28,7 @@ export default function Home() {
           <p>Economize 20% no seu primeiro pedido</p>
         </div>
         <div className="container mx-auto">
-          <Link
-            href="/produtos"
-            className=" 
-                text-white bg-verde1 
-                px-4 py-2 md:px-5 md:py-3 
-                rounded-md shadow-md
-                hover:opacity-85 hover:underline
-              "
-          >
-            Ver Produtos
-          </Link>
+          <ButtonDefault href="/produtos">Ver Produtos</ButtonDefault>
         </div>
       </BannerHome>
 
@@ -125,17 +116,7 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-12">
-            <Link
-              href="/produtos"
-              className="
-                  text-white bg-verde1
-                  px-4 py-2 md:px-5 md:py-3
-                  rounded-md shadow-md
-                  hover:opacity-85 hover:underline
-                "
-            >
-              Ver Mais Produtos
-            </Link>
+            <ButtonDefault href="/produtos">Ver Mais Produtos</ButtonDefault>
           </div>
         </section>
 
