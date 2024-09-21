@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export function ButtonDefault({ children }, href = "") {
+export function ButtonDefault({ children, href = "" }) {
   return (
     <Link
       href={href}
