@@ -14,6 +14,7 @@ import {
   InputContact,
   TextareaContact,
 } from "@/components/UI/FormContatc/Inputs";
+import { Button } from "@/components/UI/FormContatc/Button";
 import { Paragraph } from "@/components/UI/Paragraph";
 
 export default function contatos() {
@@ -105,16 +106,7 @@ export default function contatos() {
               <TextareaContact name="mensagem" id="mensagem"></TextareaContact>
             </div>
             <div>
-              <button
-                className="
-                  bg-verde2 text-white 
-                  px-10 py-4 rounded-lg
-                  lg:w-48 lg:text-lg xl:w-52 xl:text-xl
-                  hover:opacity-85 
-                "
-              >
-                Enviar
-              </button>
+              <Button>Enviar</Button>
             </div>
           </form>
         </div>
