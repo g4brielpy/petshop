@@ -15,6 +15,7 @@ import {
   TextareaContact,
 } from "@/components/UI/FormContatc/Inputs";
 import { Button } from "@/components/UI/FormContatc/Button";
+import { BoxInputs } from "@/components/UI/FormContatc/BoxInputs";
 import { Paragraph } from "@/components/UI/Paragraph";
 
 export default function contatos() {
@@ -74,7 +75,7 @@ export default function contatos() {
             className="flex flex-col gap-6"
             onSubmit={(event) => event.preventDefault()}
           >
-            <div className="flex flex-col gap-2">
+            <BoxInputs>
               <label htmlFor="name">Nome</label>
               <InputContact
                 type="text"
@@ -82,8 +83,8 @@ export default function contatos() {
                 id="name"
                 placeholder="Ex.: Gabriel Iuri"
               />
-            </div>
-            <div className="flex flex-col gap-2">
+            </BoxInputs>
+            <BoxInputs>
               <label htmlFor="email">Email</label>
               <InputContact
                 type="email"
@@ -91,8 +92,8 @@ export default function contatos() {
                 id="email"
                 placeholder="Ex.: contato@gmail.com"
               />
-            </div>
-            <div className="flex flex-col gap-2">
+            </BoxInputs>
+            <BoxInputs>
               <label htmlFor="tel">Telefone</label>
               <InputContact
                 type="tel"
@@ -100,11 +101,11 @@ export default function contatos() {
                 id="tel"
                 placeholder="Ex.: 31 9 9999-9999"
               />
-            </div>
-            <div className="flex flex-col gap-2">
+            </BoxInputs>
+            <BoxInputs>
               <label htmlFor="mensagem">Mensagem</label>
               <TextareaContact name="mensagem" id="mensagem"></TextareaContact>
-            </div>
+            </BoxInputs>
             <div>
               <Button>Enviar</Button>
             </div>
