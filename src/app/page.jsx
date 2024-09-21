@@ -12,6 +12,7 @@ import {
 import { Paragraph } from "@/components/UI/Paragraph";
 import { SpaceSection } from "@/components/UI/SpaceSection";
 import { ButtonDefault } from "@/components/UI/ButtonDefault";
+import { ButtonSecondary } from "@/components/UI/ButtonSecondary";
 
 export default function Home() {
   return (
@@ -98,16 +99,9 @@ export default function Home() {
                         <p className="font-bold text-verde2">
                           R$ {items[0].price}
                         </p>
-                        <Link
-                          href="/produtos"
-                          className="
-                            font-bold bg-verde2 text-white 
-                            px-4 py-2 rounded-lg
-                            hover:opacity-85 hover:underline  
-                          "
-                        >
+                        <ButtonSecondary href="/produtos">
                           Comprar
-                        </Link>
+                        </ButtonSecondary>
                       </div>
                     </div>
                   }

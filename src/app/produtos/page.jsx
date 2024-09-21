@@ -10,6 +10,7 @@ import {
   TitleCategory,
   TitleCard,
 } from "@/components/UI/Titles";
+import { ButtonSecondary } from "@/components/UI/ButtonSecondary";
 import { SpaceSection } from "@/components/UI/SpaceSection";
 import { Paragraph } from "@/components/UI/Paragraph";
 
@@ -75,16 +76,7 @@ export default function produtos() {
                       <p className="mb-2">{item.description}</p>
                       <div className="flex justify-between items-center flex-wrap gap-4 mt-6">
                         <p className="font-bold text-verde2">R$ {item.price}</p>
-                        <Link
-                          href="#"
-                          className="
-                            font-bold bg-verde2 text-white 
-                            px-4 py-2 rounded-lg
-                            hover:opacity-85 hover:underline  
-                          "
-                        >
-                          Comprar
-                        </Link>
+                        <ButtonSecondary href="#">Comprar</ButtonSecondary>
                       </div>
                     </div>
                   ))}
