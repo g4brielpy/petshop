@@ -5,6 +5,7 @@ export function InputContact({
   name = "",
   id = "",
   placeholder = "",
+  required = false,
 }) {
   return (
     <input
@@ -12,6 +13,7 @@ export function InputContact({
       name={name}
       id={id}
       placeholder={placeholder}
+      required={required}
       className="
         outline-none border border-solid 
         border-verde1 focus:border-verde2 
@@ -21,11 +23,17 @@ export function InputContact({
   );
 }
 
-export function TextareaContact({ name = "", id = "", children }) {
+export function TextareaContact({
+  name = "",
+  id = "",
+  required = false,
+  children,
+}) {
   return (
     <textarea
       name={name}
       id={id}
+      required={required}
       className="
         outline-none border border-solid 
         border-verde1 focus:border-verde2 

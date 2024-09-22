@@ -73,11 +73,14 @@ export default function contatos() {
             action="#"
             method="post"
             className="flex flex-col gap-6"
-            onSubmit={(event) => event.preventDefault()}
+            onSubmit={(event) => (
+              event.preventDefault(), alert("Mensagem Enviada!")
+            )}
           >
             <BoxInputs>
               <label htmlFor="name">Nome</label>
               <InputContact
+                required
                 type="text"
                 name="name"
                 id="name"
@@ -87,6 +90,7 @@ export default function contatos() {
             <BoxInputs>
               <label htmlFor="email">Email</label>
               <InputContact
+                required
                 type="email"
                 name="email"
                 id="email"
@@ -96,6 +100,7 @@ export default function contatos() {
             <BoxInputs>
               <label htmlFor="tel">Telefone</label>
               <InputContact
+                required
                 type="tel"
                 name="tel"
                 id="tel"
@@ -104,7 +109,11 @@ export default function contatos() {
             </BoxInputs>
             <BoxInputs>
               <label htmlFor="mensagem">Mensagem</label>
-              <TextareaContact name="mensagem" id="mensagem"></TextareaContact>
+              <TextareaContact
+                name="mensagem"
+                id="mensagem"
+                required
+              ></TextareaContact>
             </BoxInputs>
             <div>
               <Button>Enviar</Button>
