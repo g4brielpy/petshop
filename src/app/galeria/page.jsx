@@ -65,8 +65,8 @@ export default function galeriaFotos() {
                 <Image
                   src={image}
                   alt={`Galeria Pet ${index + 1}`}
-                  width={250}
-                  height={250}
+                  width={500}
+                  height={500}
                   className="rounded-lg object-cover shadow-md transform transition-transform duration-300 group-hover:scale-105 h-96 w-full"
                 />
               </div>
